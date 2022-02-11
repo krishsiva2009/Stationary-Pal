@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    /* Font */
+	body {
+	font-family: 'Lato', sans-serif;
+    margin: 0;
+	}
+
+	/* Navigation bar */	
+	nav {	
+		position: fixed;
+		top: 0;
+		background-color: #e3d3de;
+		padding: 20px 0;
+		padding-left: 10.2vw;
+    	margin-left: -2px;
+		width: 110vw;
+	}
+
+	nav > a {
+		text-decoration: none;
+		margin-right: 25px;
+		color: #212121;
+		transition: color 0.5s ease;
+	}
+
+	nav > a:hover {
+		text-decoration: none;
+		margin-right: 25px;
+		color: #c9abbd;
+		transition: color 0.15s ease
+	}
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+
+    .about {
+        margin-top: 57px;
+        padding: 5px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+
+    h1 {
+		font-size: 2.5rem;
+    }
+
+    h2 {
+		font-size: 1.9rem;
+	}
+
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+    .title {
+        color: grey;
+    }
+
+   .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 9px;
+        color: white;
+        background-color: #000; /*I didn't use blue button because it didn't look nice*/
+        text-align: center;
+        width: 100%;
+    }
+
+    .mrg {
+        margin-bottom: 16pt;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+            }
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+		<a href="index.html">Home</a>
+		<a href="shop.html">Shop</a>
+		<a href="about-us.html">About Us</a>
+	</nav>
+
+     <div class="about">
+          <h1>About Us</h1>
+          <p> We are Team Stationary Pal, an Online Stationery Shop. Here you can shop the world's best quality stationeries.</p>
+     </div>
+
+    <h2 align="center">Our Team</h2>
+
+    <div class="row">
+          <div class="column">
+                <div class="card">
+                    <div class="mrg">
+                        <img src="KS.jpeg" width="100%">
+                    </div>
+                        <div class="container">
+                            <h2>Krish Siva</h2>
+                            <p class="title">Web Designer</p>
+                            <p>I am Krish, I am a 7<sup>th</sup> grader and a HTML coder. I coded this entire website on my own. </p>
+                            <p><button class="button">krishsiva.rv@gmail.com</button></p>
+                                <!--<p><a href="mailto:krishsiva.rv@gmail.com" ><button class="button">Contact</button></a></p>
+                            </address> You need to change some settings in your device to use MAILTO-->
+                    </div>
+                </div>
+            </div>
+
+        <div class="column">
+               <div class="card">
+                    <img src="SS.jpeg" width="100%">
+                        <div class="container">
+                            <h2>Shashang</h2>
+                            <p class="title">Journal Filler</p>
+                            <p>I am Shashang, I am a 7<sup>th</sup> grader and I did the second part of the journal for this website. </p>
+                            <p><button class="button">example@example.com</button></p>
+                            <!--<p><a href="mailto:krishsiva.rv@gmail.com" ><button class="button">Contact</button></p></a>          I used my mail for all the contacts because I didn't get others mail.-->
+                    </div> 
+                </div>
+            </div>
+
+
+        <div class="column">
+            <div class="card">
+                    <img src="NM.jpeg" width="100%">
+                        <div class="container">
+                            <h2>Namrutha</h2>
+                            <p class="title">Journal Filler</p>
+                            <p>I am Namrutha, I am a 7<sup>th</sup> grader and I did the opening part of the journal for this website. </p>
+                            <p><button class="button">dummy@dummy.com</button></p>
+                            <!--<p><a href="mailto:krishsiva.rv@gmail.com" ><button class="button"> Contact</button></a> </p>I used my mail for all the contacts because I didn't get others mail.-->   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </body>
+</html>
