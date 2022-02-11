@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop</title>
+	<style>
+	/* Font */
+	* {
+	font-family: 'Lato', sans-serif;
+	}
+
+	/* Navigation bar */	
+	nav {	
+		position: fixed;
+		top: 0;
+		background-color: #e3d3de;
+		padding: 20px 0;
+		padding-left: 10.2vw;
+    	margin-left: -10px;
+		width: 100vw;
+	}
+
+	nav > a {
+		text-decoration: none;
+		margin-right: 25px;
+		color: #212121;
+		transition: color 0.5s ease;
+	}
+
+	nav > a:hover {
+		text-decoration: none;
+		margin-right: 25px;
+		color: #c9abbd;
+		transition: color 0.15s ease
+	}
+
+	h1 {	
+		font-size: 2.5rem;
+		margin-top: 70px;
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	th, td {
+ 		padding: 8px;
+		border-bottom: 1px solid #DDD;
+	}
+
+	tr:hover {background-color: #eee;}
+
+	button {
+		border-radius: 5px;
+		border-style: hidden;
+		width: 60pt;
+		height: 35pt;
+		background-color: #56b2d6;
+		color: #f7ffff;
+		font-size: 1.1rem;
+		transition: background-color 0.2s ease;
+		cursor: pointer;
+	}
+
+	button:hover {
+		text-decoration: none;
+		background-color: #438daa;
+		transition: background-color 0.2s ease;
+	}
+
+
+	#cost {
+		font-size: 1.9rem;
+	}
+
+	img {
+		margin-left: 50px;
+	}
+
+	.anl {
+		margin-left: 50px;
+	}
+
+	.anr {
+		margin-right: 50px;
+	}
+
+
+	</style>
+
+</head>
+	<body>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="shop.html">Shop</a>
+			<a href="about-us.html">About Us</a>
+		</nav>
+
+		<h1 align="center">Shop</h1>
+		<br><br><br>
+		
+		<table>
+			<tr>
+				<th><div class="anl"><h2 align="left">Products</h2></div></th>
+				<th><div class="anr"> <h2 align="right">Cost</h2></div></th>
+			</tr>
+			<tr>
+				<td align="left"><br><img src="pen.png" alt="Rorito Maxtron Gel Pen" width="21%"><br><div class="anl"><h3>Rorito Maxtron Gel Pen</h3></div></td>
+				<td align="right"><div class="anr"><b id="cost">&#8377;50</b><br><a href="orderform.html"><button><b>Buy</b></button></a></div></td>
+			</tr>
+			<tr>
+				<td align="left"><br><img src="pencil.png" alt="Charcoal Pencil, Set of 3" width="21%"><br><div class="anl"><h3>Charcoal Pencil, Set of 3</h3></div></td>
+				<td align="right"><div class="anr"><b id="cost">&#8377;30</b><br><a href="orderform.html"><button><b>Buy</b></button</a></div></td>
+			</tr>
+			<tr>
+				<td align="left"><br><img src="brush.png" alt="Pastel Brush, Set of 3" width="21%"><br><div class="anl"><h3>Pastel Brush, Set of 3</h3></div></td>
+				<td align="right"><div class="anr"><b id="cost">&#8377;60</b><br><a href="orderform.html"><button><b>Buy</b></button></a></div></td>
+			</tr>
+		</table>
+	
+	</body>
+</html>
