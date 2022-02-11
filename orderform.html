@@ -1,0 +1,169 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+
+    /* Font */
+    * {
+    font-family: 'Lato', sans-serif;
+    }
+
+    /* Navigation bar */    
+    nav {   
+        position: fixed;
+        top: 0;
+        background-color: #e3d3de;
+        padding: 20px 0;
+        padding-left: 10.2vw;
+        margin-left: -10px;
+        width: 100vw;
+    }
+
+    nav > a {
+        text-decoration: none;
+        margin-right: 25px;
+        color: #212121;
+        transition: color 0.5s ease;
+    }
+
+    nav > a:hover {
+        text-decoration: none;
+        margin-right: 25px;
+        color: #c9abbd;
+        transition: color 0.15s ease
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 70px;
+    }
+
+    form {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 1.15rem;
+        font-weight: 500;
+    }
+
+	#name, #dob, #pno, #email, #cno, #ctp {
+		width: 100%;
+		margin: 7px 0;
+		padding: 12px 20px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background-color: #eee;
+		font-size: 0.95rem;
+	}
+
+    #adrs {
+        width: 100%;
+		height: 100px;
+		margin: 8px 0;
+		padding: 12px 20px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background-color: #eee;
+		font-size: 0.95rem;
+		resize: none;
+    }
+
+	#submit {
+		width: 58pt;
+		/*width: 100%;*/
+		height: 30pt;
+		border-radius: 5px;
+		border-style: hidden;
+		color: #f7ffff;
+		background-color: #56b2d6;
+		font-weight:bold;
+		font-size: 0.95rem;
+		/*font-size: 1.1rem;*/
+		transition: background-color 0.2s ease;
+        cursor: pointer;
+	}
+
+	#submit:hover {
+		text-decoration: none;
+		background-color: #438daa;
+		transition: background-color 0.2s ease;
+	}
+
+	#clear {
+		width: 58pt;
+		/*width: 100%;*/
+		height: 30pt;
+		border-radius: 5px;
+		border-style: hidden;
+		color: #f7ffff;
+		background-color: #bfbfbf;
+		font-weight: bold;
+		font-size: 0.95rem;
+		/*font-size: 1.1rem;*/
+		transition: background-color 0.2s ease;
+        cursor: pointer;
+	}
+
+	#clear:hover {
+		text-decoration: none;
+		background-color: hsl(0, 0%, 50%);
+		transition: background-color 0.2s ease;
+	}
+
+	#submit, #clear {
+		margin-top: 8px;
+	}
+
+	.mrgn {
+		margin-top: 7px;
+	}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about-us.html">About Us</a>
+    </nav>
+
+    <h1 align="center">Order Form</h1>
+
+    <form action="ordered.html">
+        <label for="name">Name </label>
+        <input type="text" name="Name" placeholder="Your name" id="name" required>
+        <br>
+
+        <div class="mrgn"><label for="dob">D.O.B </label></div>
+        <input type="date" name="D.O.B" id="dob" required>
+        <br>
+
+        <div class="mrgn"><label for="pno">Phone no </label></div>
+        <input type="number" id="pno" name="Phone-No" placeholder="Your phone no" required>
+		<br>
+        <div class="mrgn"><label for="email">Email id: </label></div>
+        <input type="email" id="email" name="Email-id" placeholder="Your email id" required >
+        <br>
+
+        <div class="mrgn"><label for="ctp">Card type </label></div>
+        <select name="card-type" id="ctp" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="debit-card">Debit Card</option>
+        </select>
+        <br>
+
+		<div class="mrgn"><label for="cno">Card No </label></div>
+        <input type="text" id="cno" name="Card-No" placeholder="eg. 1111-2222-3333-4444" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+		<br>
+		
+        <div class="mrgn"><label for="adrs">Adress </label></div>
+        <textarea id="adrs" placeholder="Your address for delivering" required></textarea>
+        <br>
+
+        <a href="ordered.html"><input type="submit" value="Order" id="submit"></a>
+        <input type="reset" value="Clear" id="clear">
+    </form>
+
+</body>
+</html>

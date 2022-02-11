@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ordered</title>
+
+	<style>
+	/* Font */
+	* {
+	font-family: 'Lato', sans-serif;
+	}
+
+    /*Div Class styling*/
+    .outer {
+        display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .inner {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Div Body*/
+    img {
+        width: 35%;
+    }
+
+    button {
+        width: 35vw;
+        height: 25pt;
+        border-style: none;
+        border-radius: 5px;
+        background-color: #56b2d6;
+		color: #f7ffff;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.2s ease;
+        cursor: pointer;
+    }
+
+    button:hover {
+        text-decoration: none;
+		background-color: #438daa;
+		transition: background-color 0.2s ease;
+    }
+
+    p {
+        text-align: center;
+        width: 35vw;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <!--No Navigation Bar for this page, only way users can return is by clicking the GO BACK button-->
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <img src="ordered.jpeg">
+                <a href="index.html"><button>Go Back</button></a>
+                <p><b>Note: </b>This is just an example website, so you have not paid any money and nothing has been ordered!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
